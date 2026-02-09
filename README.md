@@ -9,17 +9,17 @@ Use <b>HNSW Index</b>, When dataset > 500k - 1M vectors <br>
 Use <b>IVF Index</b>, When dataset > 1M vectors <br>
 
 <b><u>Metric Configuration: </u></b><br>
-Flat Index:
+<b>Flat Index:</b>
 
 Similarity metric is configured when creating an index. <br>
 For L2 Euclidean distance, use faiss.IndexFlatL2(DIM) <br>
 For Inner Product Similarity, use faiss.IndexFlatIP(DIM)<br>
 
-HNSW Index:
+<b>HNSW Index:</b>
 
 HNSW uses L2 Euclidean distance by default.<br>
 To switch to Inner Product Similarity, use index = faiss.IndexHNSWFlat(DIM, M, faiss.METRIC_INNER_PRODUCT) 
-Where DIM = Vector Dimensions,
+Where DIM = Vector Dimensions, <br>
       M = No of neighbours per graph
 <br>
 
