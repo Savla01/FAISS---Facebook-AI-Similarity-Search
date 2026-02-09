@@ -4,23 +4,24 @@
 
 <b><u>Choose FAISS index type based on size of vector datasets:</u></b>
 
-Use <b>Flat Index</b>, When dataset < 100K vectors
-Use <b>HNSW Index</b>, When dataset > 500k - 1M vectors
-Use <b>IVF Index</b>, When dataset > 1M vectors
+Use <b>Flat Index</b>, When dataset < 100K vectors <br>
+Use <b>HNSW Index</b>, When dataset > 500k - 1M vectors <br>
+Use <b>IVF Index</b>, When dataset > 1M vectors <br>
 
-<b><u>Metric Configuration: </u></b>
+<b><u>Metric Configuration: </u></b><br>
 Flat Index:
 
-Similarity metric is configured when creating an index.
-For L2 Euclidean distance, use faiss.IndexFlatL2(DIM)
-For Inner Product Similarity, use faiss.IndexFlatIP(DIM)
+Similarity metric is configured when creating an index. <br>
+For L2 Euclidean distance, use faiss.IndexFlatL2(DIM) <br>
+For Inner Product Similarity, use faiss.IndexFlatIP(DIM)<br>
 
 HNSW Index:
 
-HNSW uses L2 Euclidean distance by default.
+HNSW uses L2 Euclidean distance by default.<br>
 To switch to Inner Product Similarity, use index = faiss.IndexHNSWFlat(DIM, M, faiss.METRIC_INNER_PRODUCT) 
 Where DIM = Vector Dimensions,
       M = No of neighbours per graph
+<br>
 
 <b><u>Similarity score Calculations:</u></b>
 
