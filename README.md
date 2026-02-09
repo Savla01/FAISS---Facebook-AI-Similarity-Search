@@ -21,7 +21,7 @@ For Inner Product Similarity, use faiss.IndexFlatIP(DIM)<br>
 HNSW uses L2 Euclidean distance by default.<br>
 To switch to Inner Product Similarity, use index = faiss.IndexHNSWFlat(DIM, M, faiss.METRIC_INNER_PRODUCT) 
 Where DIM = Vector Dimensions, <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M = No of neighbours per graph
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M = No of neighbours per graph
 <br>
 
 <b><u>Similarity score Calculations:</u></b>
