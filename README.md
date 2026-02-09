@@ -8,7 +8,8 @@ Use <b>Flat Index</b>, When dataset < 100K vectors <br>
 Use <b>HNSW Index</b>, When dataset > 500k - 1M vectors <br>
 Use <b>IVF Index</b>, When dataset > 1M vectors <br>
 
-<b><u>Metric Configuration: </u></b><br>
+<b><u>Metric Configuration:</u></b><br>
+
 <b>Flat Index:</b>
 
 Similarity metric is configured when creating an index. <br>
