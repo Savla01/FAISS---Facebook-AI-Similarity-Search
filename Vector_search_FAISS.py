@@ -60,7 +60,7 @@ best_idx = indices[0][0]
 
 print("\nSearch result:")
 
-if best_score >= COSINE_THRESHOLD:            #If metric set to L2 Euclidean Distance, best_score < 0.4
+if best_score >= COSINE_THRESHOLD:            #If metric set to L2 Euclidean Distance, best_score < Cosine_threshold
     print("Match found:", names[best_idx])
 else:
     print("No match found")
